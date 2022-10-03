@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Esta es la primera página web -->
+<html style="background-color: #ff99ff">
+    <head>
+        <title>Panadería Mariquitos</title>
+        <meta charset="UTF-8">
+        <link href="fcss/menupp.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <a name="arriba"></a>
+    <body>
+        
+        <header class="header">
+            <nav class="nav">
+                <a href="index2.html" class="nav-link" logo style="color: #ff0033;text-align: center; font-size: 30px;">Panadería Mariquitos <img src="imgs/mr1.png" alt="Img" height="50"/></a> 
+                
+                <ul class="nav-menu">
+                    <a name="arriba"></a>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ofertadia.html">&LeftTriangleBar;</a> </li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="index2.html">&RightTriangleBar;</a> </li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="pagina1.html">Nuestros Productos</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="mprecios.html">Menú</a></li>   
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="contactos.html">Contáctanos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="encargos.html">Encargos</a></li>   
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="reservacion.html">Reservaciones</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ofertadia.html">Oferta del día</a></li>   
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="sugerencias.html">Sugerencias</a></li> 
+                    <a href="#abajo">Ir abajo</a>
+                </ul>
+        </nav>
+        </header>
+        
+        <section>
+            <h3 style="color: #ff0033;font-size: 30px; text-align: center">Sugerencias</h3><br/><br/>
+                <h3 style="font-size: 22px;text-align: center">Tú opinión es importante! Puedes dejar sugerencias o comentarios que nos ayuden a mejorar y seguir creciendo!</h3><br/><br/>
+                <form align="center" style="font-size: 25px" action="sugerencia.jsp" method="POST">
+                    <input type="hidden" name="idCliente" value="123456789"/>
+                    <label>Nombre completo: </label>
+                    <input type="text" 
+                           name="nombre" 
+                           placeholder="Nombre 1er-Apellido1 2do-Apellido"/>
+                    <br/><br/>  
+                    <label>Correo: </label>
+                    <input type="email" 
+                           name="correo" 
+                           placeholder="ejemplo@correo.com"/>
+                    <br/><br/>
+                    <label>Teléfono: </label>
+                    <input type="text" 
+                           name="tel" 
+                           placeholder="2233-4567"/>
+                    <br/><br>
+                    <label>Tu pedido fue para: </label>
+                    Llevar <input type="checkbox" 
+                           name="fam"/>
+                    En restaurante <input type="checkbox" 
+                           name="lab"/>                        
+                    <br/><br/> 
+                    <label>Fecha de tu pedido: </label>
+                    <input type="date" 
+                           name="cita"/>
+                    <br/><br/>
+                    <label>Hora de tu pedido: </label>
+                    <input type="time" 
+                           name="hora"/>
+                    <br/><br/>
+                    <label>Descripción (brinde más detalles o comentarios acerca de tu sugerencia): </label>
+                    <input type="text" 
+                           name="details"/>
+                    <br/><br/>
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
+        </section>
+</html>
